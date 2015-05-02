@@ -69,7 +69,18 @@ func modifyRequest(request *http.Request) *http.Request {
 	bodyString = findAndReplace(bodyString, "\"30\":\"2\"", "\"30\":\"5\"")
 	bodyString = findAndReplace(bodyString, "\"30\":\"3\"", "\"30\":\"5\"")
 	bodyString = findAndReplace(bodyString, "\"30\":\"4\"", "\"30\":\"5\"")
-
+	bodyString = findAndReplace(bodyString, "\"29\":\"1/"", "\"30\";\"28\"")
+	bodyString = findAndReplace(bodyString, "\"29\":\"2/"", "\"30\";\"28\"")
+	bodyString = findAndReplace(bodyString, "\"29\":\"3/"", "\"30\";\"28\"")
+	bodyString = findAndReplace(bodyString, "\"29\":\"4/"", "\"30\";\"28\"")
+	bodyString = findAndReplace(bodyString, "\"29\":\"5/"", "\"30\";\"28\"")
+	bodyString = findAndReplace(bodyString, "\"29\":\"1/"", "\"30\";\"28\"")
+	bodyString = findAndReplace(bodyString, "\"29\":\"1/"", "\"30\";\"28\"")
+	bodyString = findAndReplace(bodyString, "\"29\":\"1/"", "\"30\";\"28\"")
+	bodyString = findAndReplace(bodyString, "\"29\":\"1/"", "\"30\";\"28\"")
+	bodyString = findAndReplace(bodyString, "\"29\":\"1/"", "\"30\";\"28\"")
+	bodyString = findAndReplace(bodyString, "\"29\":\"1/"", "\"30\";\"28\"")
+	
 	modifiedBodyBuffer := bytes.NewBufferString(bodyString)
 
 	// ioutil.NopCloser gives us an io.Closer from a byte buffer, required by the request type
