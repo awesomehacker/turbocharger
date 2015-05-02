@@ -80,6 +80,11 @@ func modifyRequest(request *http.Request) *http.Request {
 	bodyString = findAndReplace(bodyString, "\"29\":\"1/"", "\"30\";\"28\"")
 	bodyString = findAndReplace(bodyString, "\"29\":\"1/"", "\"30\";\"28\"")
 	bodyString = findAndReplace(bodyString, "\"29\":\"1/"", "\"30\";\"28\"")
+	bodyString = findAndReplace(bodyString, "\"29\":\"1/"", "\"30\";\"28\"")
+	bodyString = findAndReplace(bodyString, "\"29\":\"1/"", "\"30\";\"28\"")
+	bodyString = findAndReplace(bodyString, "\"29\":\"1/"", "\"30\";\"28\"")
+	bodyString = findAndReplace(bodyString, "\"29\":\"1/"", "\"30\";\"28\"")
+	bodyString = findAndReplace(bodyString, "\"29\":\"1/"", "\"30\";\"28\"")
 	
 	modifiedBodyBuffer := bytes.NewBufferString(bodyString)
 
